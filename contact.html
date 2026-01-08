@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact MARS Academy. Book your free trial or ask questions about our robotics and coding programs for kids. Call (872) 235-6559 or email contact@robomars.us">
+    <meta name="keywords" content="contact MARS Academy, free trial booking, robotics classes Chicago, coding classes for kids, STEM education contact">
+    <meta property="og:title" content="Contact Us - MARS Academy">
+    <meta property="og:description" content="Get in touch with MARS Academy. Book a free trial or learn more about our robotics and coding programs.">
+    <meta property="og:image" content="/assets/logo.png">
+    <meta property="og:url" content="https://robomars.us/contact">
+    <title>Contact Us - MARS Academy | Book Your Free Trial</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/mascot/marsy-waving.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F5A623',
+                        'primary-dark': '#e89610',
+                        charcoal: '#2D2D2D',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-charcoal">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-3">
+                    <img src="assets/logo.png" alt="MARS Academy Logo" class="h-16 w-auto">
+                    <span class="text-2xl font-bold text-charcoal">MARS Academy</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-charcoal hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="partners.html" class="text-charcoal hover:text-primary transition-colors font-medium">Partners</a>
+                    <a href="contact.html" class="text-primary font-medium">Contact</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScC9hFHcMgIvkHYKcI4l4QB80noQpzteBT1J7H3w9zluNn8lQ/viewform" target="_blank" class="btn-primary">
+                        Book Free Trial
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-charcoal hover:text-primary transition-colors font-medium">Home</a>
+                <a href="partners.html" class="block text-charcoal hover:text-primary transition-colors font-medium">Partners</a>
+                <a href="contact.html" class="block text-primary font-medium">Contact</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScC9hFHcMgIvkHYKcI4l4QB80noQpzteBT1J7H3w9zluNn8lQ/viewform" target="_blank" class="block btn-primary text-center">
+                    Book Free Trial
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 bg-gradient-to-br from-charcoal via-gray-800 to-primary text-white text-center">
+        <div class="max-w-4xl mx-auto" data-aos="fade-up">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Let's Get in Touch</h1>
+            <p class="text-xl md:text-2xl text-gray-200">We're excited to hear from you!</p>
+        </div>
+    </section>
+
+    <!-- Contact Info + Form Section -->
+    <section class="py-20 px-4 gradient-subtle bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Left Side - Contact Details -->
+                <div data-aos="fade-right">
+                    <div class="card">
+                        <h2 class="text-2xl font-bold mb-6">Contact Details</h2>
+
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start space-x-4">
+                                <div class="text-primary text-3xl">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Phone</h3>
+                                    <a href="tel:+18722356559" class="text-gray-600 hover:text-primary transition-colors">(872) 235-6559</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="text-primary text-3xl">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Email</h3>
+                                    <a href="mailto:contact@robomars.us" class="text-gray-600 hover:text-primary transition-colors">contact@robomars.us</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="font-semibold mb-4">Follow Us</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://instagram.com/robomars_us" class="flex items-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-primary hover:text-white rounded-lg transition-all" target="_blank">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                    <span class="font-medium">Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <img src="assets/mascot/marsy-laptop.png" alt="Marsy with laptop" class="w-64 mx-auto mascot-float">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <div data-aos="fade-left">
+                    <div class="card">
+                        <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                            <input type="hidden" name="subject" value="New Contact - MARS Academy">
+                            <input type="hidden" name="from_name" value="MARS Academy Contact Form">
+
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="first_name" class="block text-sm font-semibold mb-2">First Name *</label>
+                                    <input type="text" id="first_name" name="first_name" required class="form-input">
+                                </div>
+                                <div>
+                                    <label for="last_name" class="block text-sm font-semibold mb-2">Last Name *</label>
+                                    <input type="text" id="last_name" name="last_name" required class="form-input">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="phone" class="block text-sm font-semibold mb-2">Phone *</label>
+                                    <input type="tel" id="phone" name="phone" required class="form-input">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold mb-2">Email *</label>
+                                    <input type="email" id="email" name="email" required class="form-input">
+                                </div>
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-semibold mb-2">Message *</label>
+                                <textarea id="message" name="message" rows="6" required class="form-input" placeholder="Tell us how we can help you..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary w-full">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Logo & Tagline -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/logo.png" alt="MARS Academy" class="h-16 w-auto">
+                        <span class="text-2xl font-bold text-white">MARS Academy</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Helping families raise future-ready children through AI, robotics, and coding education.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="partners.html" class="text-gray-400 hover:text-primary transition-colors">Partners</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (872) 235-6559</li>
+                        <li><i class="fas fa-envelope mr-2"></i> contact@robomars.us</li>
+                        <li class="flex space-x-4 pt-4">
+                            <a href="https://instagram.com/robomars_us" target="_blank" class="social-icon" aria-label="Instagram" title="Follow us on Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p class="mb-2">© 2026 MARS Academy. All rights reserved.</p>
+                <p>Website by <a href="https://khanmarketinggroup.com" target="_blank" class="text-primary hover:underline">Khan Marketing Group</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

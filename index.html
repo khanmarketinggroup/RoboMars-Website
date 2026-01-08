@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MARS Academy - Kids robotics and coding academy. We help you raise future-ready children through AI, robotics, and coding education. Book your free trial today!">
+    <meta name="keywords" content="kids coding, robotics classes, AI workshops, STEM education, Python for kids, Chicago coding academy">
+    <meta property="og:title" content="MARS Academy - Kids Robotics & Coding Academy">
+    <meta property="og:description" content="We help you raise future-ready children through AI, robotics, and coding education. 340+ students, 500+ projects made.">
+    <meta property="og:image" content="/assets/logo.png">
+    <meta property="og:url" content="https://robomars.us">
+    <title>MARS Academy - Kids Robotics & Coding Academy | Chicago</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/mascot/marsy-waving.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F5A623',
+                        'primary-dark': '#e89610',
+                        charcoal: '#2D2D2D',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-charcoal">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-3">
+                    <img src="assets/logo.png" alt="MARS Academy Logo" class="h-16 w-auto">
+                    <span class="text-2xl font-bold text-charcoal">MARS Academy</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-charcoal hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="partners.html" class="text-charcoal hover:text-primary transition-colors font-medium">Partners</a>
+                    <a href="contact.html" class="text-charcoal hover:text-primary transition-colors font-medium">Contact</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScC9hFHcMgIvkHYKcI4l4QB80noQpzteBT1J7H3w9zluNn8lQ/viewform" target="_blank" class="btn-primary">
+                        Book Free Trial
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 py-4 space-y-3">
+                <a href="/" class="block text-charcoal hover:text-primary transition-colors font-medium">Home</a>
+                <a href="partners.html" class="block text-charcoal hover:text-primary transition-colors font-medium">Partners</a>
+                <a href="contact.html" class="block text-charcoal hover:text-primary transition-colors font-medium">Contact</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScC9hFHcMgIvkHYKcI4l4QB80noQpzteBT1J7H3w9zluNn8lQ/viewform" target="_blank" class="block btn-primary text-center">
+                    Book Free Trial
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-4 overflow-hidden bg-gradient-to-br from-charcoal via-gray-800 to-primary">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-white" data-aos="fade-right">
+                    <p class="text-primary text-sm font-semibold mb-4 uppercase tracking-wide">Don't let your child fall behind</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        We help you raise future-ready children!
+                    </h1>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScC9hFHcMgIvkHYKcI4l4QB80noQpzteBT1J7H3w9zluNn8lQ/viewform" target="_blank" class="btn-primary inline-block">
+                        Book Your Free Trial
+                    </a>
+                </div>
+
+                <!-- Right Mascot -->
+                <div class="flex justify-center" data-aos="fade-left">
+                    <img src="assets/mascot/marsy-waving.png" alt="Marsy the Mars Robot" class="w-full max-w-md mascot-float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg">
+                    We offer engaging and comprehensive courses designed to ignite your child's passion for technology and innovation.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="text-primary text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold mb-3">AI & Robotics Workshops</h3>
+                    <p class="text-gray-600">
+                        In our hands-on workshops, kids design, build, and program robots. Free demo sessions available for schools, scout troops, museums, STEM centers, and more.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary text-4xl mb-4">💻</div>
+                    <h3 class="text-xl font-bold mb-3">Coding Classes</h3>
+                    <p class="text-gray-600">
+                        Kids learn Python, JavaScript, AI, web development, 3D & PCB design, electronics, sensors, circuitry, and more—building real projects and sharpening problem-solving skills.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold mb-3">Personalized Learning</h3>
+                    <p class="text-gray-600">
+                        We tailor our lessons to suit individual learning styles and paces, ensuring every child achieves their full potential.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-primary text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold mb-3">Project-Based Learning</h3>
+                    <p class="text-gray-600">
+                        Children will apply their knowledge in practical projects that challenge their creativity and technical skills. From building apps to creating autonomous robots, our projects make learning fun and impactful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Workshops in Action Gallery Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-8" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Workshops in Action</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg mb-8">
+                    See our students learning, building, and creating amazing projects in our hands-on workshops.
+                </p>
+
+                <!-- Filter Buttons -->
+                <div class="flex justify-center gap-4 mb-8">
+                    <button class="gallery-filter-btn active" data-filter="photos">
+                        Photos
+                    </button>
+                    <button class="gallery-filter-btn" data-filter="videos">
+                        Videos
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-grid">
+                <!-- Photos -->
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="0">
+                    <img src="assets/gallery/Mars/20240601_190430.jpg" alt="MARS Academy Workshop - Students Building Robots" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/gallery/Mars/20240601_190446.jpg" alt="MARS Academy Workshop - Hands-On Learning" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/gallery/Mars/20240601_190446(1).jpg" alt="MARS Academy Workshop - Creative Minds" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/gallery/Mars/20240601_190505.jpg" alt="MARS Academy Workshop - Robotics Project" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="0">
+                    <img src="assets/gallery/Mars/20240601_190545.jpg" alt="MARS Academy Workshop - Coding Session" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/gallery/Mars/20240601_190609.jpg" alt="MARS Academy Workshop - Team Collaboration" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/gallery/Mars/20240601_190609(1).jpg" alt="MARS Academy Workshop - Future Ready" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/gallery/Mars/20240601_190633.jpg" alt="MARS Academy Workshop - Student Projects" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="0">
+                    <img src="assets/gallery/Mars/20240601_190821.jpg" alt="MARS Academy Workshop - AI & Robotics" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/gallery/Mars/20240601_191832(1).jpg" alt="MARS Academy Workshop - Learning in Action" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/gallery/Mars/IMG_20240727_105115088.jpg" alt="MARS Academy Workshop - Young Engineers" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div class="gallery-item" data-type="photo" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/gallery/Mars/IMG_20240727_110422300.jpg" alt="Mars Academy Workshop - Building Technology" class="w-full h-64 object-cover rounded-lg">
+                </div>
+
+                <!-- Videos -->
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="0">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240727_104806067.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="100">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240727_104814861.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="200">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240727_104834009.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="300">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240727_111423108.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="0">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240728_114843936.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="100">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240804_153712531~2.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="200">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240804_153903224.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="300">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240810_112504731.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="0">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240825_114306198.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="100">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240825_114432347.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="200">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240825_114608015.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="300">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240908_185555898~2.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="0">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240922_184424116.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="100">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20240922_190719407~2.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="200">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20241006_181756917.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="300">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20241006_190257150.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="0">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20241013_185030552.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="100">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20241020_161008300.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+                <div class="gallery-item gallery-video" data-type="video" data-aos="fade-up" data-aos-delay="200">
+                    <video class="w-full h-64 object-cover rounded-lg" preload="metadata">
+                        <source src="assets/gallery/Mars/VID_20241020_161804742.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-play-icon">▶</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox hidden">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev">‹</button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next">›</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" class="lightbox-media" src="" alt="">
+            <video id="lightbox-video" class="lightbox-media hidden" controls>
+                <source id="lightbox-video-source" src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="py-16 px-4 why-choose-gradient">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 text-center text-white">
+                <div data-aos="zoom-in" data-aos-delay="0">
+                    <div class="text-5xl md:text-6xl font-bold mb-2">
+                        <span class="counter" data-target="340">0</span>+
+                    </div>
+                    <p class="text-xl font-semibold">Students</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-5xl md:text-6xl font-bold mb-2">
+                        <span class="counter" data-target="500">0</span>+
+                    </div>
+                    <p class="text-xl font-semibold">Projects Made</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-5xl md:text-6xl font-bold mb-2">
+                        <span class="counter" data-target="16">0</span>+
+                    </div>
+                    <p class="text-xl font-semibold">Partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Upcoming Events & Classes</h2>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <div class="card" data-aos="fade-up">
+                    <div class="flex items-start justify-between mb-4">
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">TBD</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Free Weekly Support Call</h3>
+                    <p class="text-gray-600 mb-4">
+                        Join our 40-minute Zoom support call every Monday at 10:00 AM for parents, teachers, and students seeking tech education guidance.
+                    </p>
+                </div>
+
+                <p class="text-center text-gray-500 mt-8" data-aos="fade-up">
+                    More events coming soon! Check back for updates or contact us for information about upcoming workshops and classes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Students & Parents Say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex items-center mb-4">
+                        <img src="assets/mascot/marsy-excited.png" alt="Hiba" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Hiba (Student, Age 12)</h4>
+                            <div class="text-primary">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "I love attending MARS Academy's coding classes! I started with basic coding and now I'm learning Python and building my own games. The teachers are really nice and always explain things clearly. It's so much fun to see what I can create with code!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="assets/mascot/marsy-thinking.png" alt="Sarah" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah (Parent)</h4>
+                            <div class="text-primary">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "I am a parent of an 11 year old boy who was showing interest in learning how to Code. We started him off with Scratch, but were soon looking for more instruction. We came across MARS Academy and signed him up immediately. It was a game changer. My son really enjoys the class and looks forward to learning new skills and practicing those already learned every week."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="assets/mascot/marsy-superhero.png" alt="Arshad" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Arshad (Student, Age 10)</h4>
+                            <div class="text-primary">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "I enjoy going to MARS Academy robotics workshops. We get to build robots and make them move! It's like playing with toys, but we're learning how to make them work. I feel like I'm becoming a real engineer."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 px-4 why-choose-gradient">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose MARS Academy?</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="card text-center" data-aos="fade-up" data-aos-delay="0">
+                    <div class="text-primary text-5xl mb-4">👨‍🏫</div>
+                    <h3 class="text-xl font-bold mb-3">Expert-Led, Hands-On Learning</h3>
+                    <p class="text-gray-600">
+                        Our instructors are seasoned educators and tech professionals who guide students through real-world projects—never just theory.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="card text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary text-5xl mb-4">📚</div>
+                    <h3 class="text-xl font-bold mb-3">Comprehensive, Future-Ready Curriculum</h3>
+                    <p class="text-gray-600">
+                        From coding and AI to electronics, 3D design, and circuitry, we cover the full tech stack to equip kids with in-demand skills.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="card text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary text-5xl mb-4">✅</div>
+                    <h3 class="text-xl font-bold mb-3">Risk-Free Exploration</h3>
+                    <p class="text-gray-600">
+                        With free demo sessions and no contracts, families can experience our engaging, supportive environment before committing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4 bg-charcoal text-white text-center">
+        <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to get started?</h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScC9hFHcMgIvkHYKcI4l4QB80noQpzteBT1J7H3w9zluNn8lQ/viewform" target="_blank" class="btn-primary inline-block">
+                Book Your Free Trial
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Logo & Tagline -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/logo.png" alt="MARS Academy" class="h-16 w-auto">
+                        <span class="text-2xl font-bold text-white">MARS Academy</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Helping families raise future-ready children through AI, robotics, and coding education.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="partners.html" class="text-gray-400 hover:text-primary transition-colors">Partners</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (872) 235-6559</li>
+                        <li><i class="fas fa-envelope mr-2"></i> contact@robomars.us</li>
+                        <li class="flex space-x-4 pt-4">
+                            <a href="https://instagram.com/robomars_us" target="_blank" class="social-icon" aria-label="Instagram" title="Follow us on Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p class="mb-2">© 2026 MARS Academy. All rights reserved.</p>
+                <p>Website by <a href="https://khanmarketinggroup.com" target="_blank" class="text-primary hover:underline">Khan Marketing Group</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
