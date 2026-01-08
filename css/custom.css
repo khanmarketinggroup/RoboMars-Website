@@ -355,6 +355,17 @@ form button[type="submit"]:disabled {
 
 .gallery-video video {
     cursor: pointer;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+/* Force portrait orientation on mobile for consistent display */
+@media (max-width: 768px) {
+    .gallery-video video {
+        aspect-ratio: 3 / 4;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .video-play-icon {
