@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#2D2D2D"/>
+
+  <!-- MARS Academy branding -->
+  <text x="200" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#F5A623" text-anchor="middle">
+    MARS Academy
+  </text>
+
+  <!-- Play button circle -->
+  <circle cx="200" cy="170" r="40" fill="#F5A623" opacity="0.9"/>
+
+  <!-- Play triangle -->
+  <polygon points="190,155 190,185 215,170" fill="#2D2D2D"/>
+
+  <!-- "Workshop Video" text -->
+  <text x="200" y="235" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle" opacity="0.8">
+    Workshop Video
+  </text>
+</svg>
