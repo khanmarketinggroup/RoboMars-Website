@@ -125,10 +125,10 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-/* Logo Text - Hide on very small screens */
+/* Logo Text - Adjust font size for small screens */
 @media (max-width: 480px) {
     nav a span {
-        display: none;
+        font-size: 1.125rem;
     }
 }
 
